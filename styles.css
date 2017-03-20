@@ -43,14 +43,14 @@ nav li {
     list-style: none;
     display: inline-flex;
     font-size: 1.5em;
-    color: white;
+    color: #f5f1e8;
     text-align: center;
     justify-content: space-around;
     align-items: center;
 }
 
 nav a:visited {
-    color: white;
+    color: #f5f1e8;
 }
 
 nav a {
@@ -58,6 +58,10 @@ nav a {
     text-decoration: none;
     text-align: center;
     justify-content: space-around;
+}
+
+nav a:hover {
+    color: white;
 }
 
 .cover {
@@ -76,4 +80,56 @@ footer {
     background: #600000;
     padding: 1em;
     width: 100%;
+}
+
+h3 {
+    font-size: 2em;
+    text-align: center
+}
+
+.bio {
+    display: flex;
+    padding: 1em;
+
+}
+
+.me {
+    width: 50%;
+    height: 50%;
+}
+
+h4 {
+    margin: 10px;
+    font-size: 1.25em;
+}
+
+.resume li {
+    list-style: none;
+     transition: color .5s;
+    line-height: 30px;
+}
+
+.resume li:hover {
+    color: #ada48c;
+    transition: color .5s;
+}
+
+form {
+  width: 33%;
+  padding: 2em;
+  margin: 0 auto;
+}
+
+input {
+  display: block;
+}
+
+input[type="text"] {
+  border: 0;
+  margin: 1em;
+  padding: .5em;
+}
+
+input[type="Submit"]:hover {
+  background: white;
 }
