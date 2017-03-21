@@ -58,6 +58,8 @@ nav a {
     text-decoration: none;
     text-align: center;
     justify-content: space-around;
+    color: #665730;
+
 }
 
 nav a:hover {
@@ -132,4 +134,77 @@ input[type="text"] {
 
 input[type="Submit"]:hover {
   background: white;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Thumbnail */
+figure {
+  background: #600000;
+  padding: .5em;
+}
+
+.thumb {
+  filter: gray;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+
+.thumb:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+/* Fullsize Overlay */
+/* Hide */
+.overlay {
+  display: none;
+  
+  position: absolute;
+  background: rgba(0,0,0, .15);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Show */
+.overlay:target {
+  display: block;
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh;
+  animation: fadey 1s;
+}
+
+.overlay img {
+  border: 10px solid white;
+  box-shadow: 0 0 20px white;
+}
+
+@keyframes fadey {
+  0% { opacity: 0; 
+      transform: scale(0);}
+  100% { opacity: 1; 
+        transform: scale(1);}
+}
+
+.note {
+    display: flex;
+    justify-content: center;
+}
+
+.flickr:visited {
+    color: #600000;
+}
+
+.flickr {
+   color: #600000;
+    text-decoration: none;
 }
