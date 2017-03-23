@@ -58,7 +58,7 @@ nav a {
     text-decoration: none;
     text-align: center;
     justify-content: space-around;
-    color: #665730;
+    color: #f5f1e8;
 
 }
 
@@ -80,8 +80,9 @@ footer {
     bottom: 0;
     left: 0;
     background: #600000;
-    padding: 1em;
+    padding: .5em;
     width: 100%;
+    position: fixed;
 }
 
 h3 {
@@ -151,11 +152,14 @@ figure {
   filter: gray;
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
+      -webkit-transition: filter 1s;
 }
 
 .thumb:hover {
   filter: none;
   -webkit-filter: grayscale(0);
+    -webkit-transition: filter 1s;
+
 }
 
 /* Fullsize Overlay */
@@ -169,11 +173,12 @@ figure {
   width: 100%;
   top: 0;
   left: 0;
+    z-index: 1;
 }
 
 /* Show */
 .overlay:target {
-  display: block;
+ 
   
   display: flex;
   justify-content: center;
@@ -184,6 +189,8 @@ figure {
 }
 
 .overlay img {
+    width: 98%;
+    height: 20%;
   border: 10px solid white;
   box-shadow: 0 0 20px white;
 }
@@ -207,4 +214,52 @@ figure {
 .flickr {
    color: #600000;
     text-decoration: none;
+}
+
+/* 
+  Mobile: 
+  * 320px = 20em
+  * 767px = 47.9375em
+*/
+@media only screen 
+  and (min-width: 20em) 
+  and (max-width: 47.9375em)  { 
+    
+      .bio {
+          display: block;
+      }
+      
+      .me {
+          width: 100%;
+      }
+      
+      .titles {
+          display: flex;
+          flex-wrap: wrap;
+      }
+      
+
+  
+}
+
+/* Tablet:  
+  * 768px = 48em 
+    1023px = 63.9375em;
+*/
+@media only screen 
+  and (min-width: 48em) 
+  and (max-width: 63.9375em)  {
+    
+
+
+}
+
+/* Desktop: 
+  * 1024px = 64em
+  * 64em and larger
+*/
+@media screen and (min-width: 64em) { 
+  
+
+
 }
