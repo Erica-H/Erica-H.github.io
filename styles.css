@@ -139,7 +139,10 @@ input[type="Submit"]:hover {
 
 .photos {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Thumbnail */
@@ -214,6 +217,18 @@ figure {
 .flickr {
    color: #600000;
     text-decoration: none;
+}
+
+.flickr:hover {
+    color: #46350A;
+}
+
+.contactstuff {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 /* 
