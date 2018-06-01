@@ -117,26 +117,6 @@ h4 {
     transition: color .5s;
 }
 
-form {
-  width: 33%;
-  padding: 2em;
-  margin: 0 auto;
-}
-
-input {
-  display: block;
-}
-
-input[type="text"] {
-  border: 0;
-  margin: 1em;
-  padding: .5em;
-}
-
-input[type="Submit"]:hover {
-  background: white;
-}
-
 .photos {
     display: flex;
     flex-direction: row;
